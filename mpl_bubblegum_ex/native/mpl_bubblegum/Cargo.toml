@@ -1,0 +1,22 @@
+[package]
+name = "mpl_bubblegum"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = "2021"
+
+[lib]
+name = "mpl_bubblegum"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.30.0"
+mpl-bubblegum = "1.2.0"
+solana-sdk = "1.17"
+solana-client = "1.17"
+solana-program = "1.17"
+borsh = "0.10.3"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bs58 = "0.5.0" 
